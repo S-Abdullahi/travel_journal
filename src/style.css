@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    height: 5.5rem;
+    background-color: #F55A5A;
+    color: white;
+}
+
+img{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 20% 2fr;
+    align-items: center;
+    margin: 4rem;
+    gap: 1rem;
+    width: 50%;
+    min-width: 80%;
+    margin: 5rem auto;
+}
+
+.card__image{
+    height: 100%;
+    width: 100%;
+}
+
+.card__detail{
+    /* padding-top: 2rem; */
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card__head{
+    display: flex;
+    align-items: center;
+}
+
+.card__country{
+    letter-spacing: 0.17em;
+    color: #2B283A;
+    text-transform: uppercase;
+}
+
+.card__link{
+    margin-left: 1rem;
+}
+
+.card__title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #2B283A;
+    line-height: 3rem;
+    margin-top: 0.5rem;
+}
+
+.card__link a{
+    color:  #918E9B;
+}
+
+.card__date{
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card__description{
+    line-height: 150%;
+    color: #2B283A;
+    max-width: 80%;
+}
+
+@media screen and (max-width: 800px){
+    .card{
+        grid-template-columns: 40% 2fr;
+        width: 95%;
+    }
+}
