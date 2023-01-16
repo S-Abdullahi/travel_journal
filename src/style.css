@@ -36,11 +36,22 @@ img{
     width: 50%;
     min-width: 80%;
     margin: 5rem auto;
+    padding-bottom: 3rem;
+    
+}
+
+.card:not(:last-of-type){
+    border-bottom: 2px solid #dedbe6;
+}
+
+.card__image-con{
+    width: 100%;
 }
 
 .card__image{
     height: 100%;
     width: 100%;
+    border-radius: 0.8rem;
 }
 
 .card__detail{
